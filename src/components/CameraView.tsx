@@ -29,7 +29,7 @@ export const CameraView: React.FC<CameraViewProps> = ({ onPoseUpdate, count, sta
   }, [devices, onCameraDevicesLoaded]);
 
   return (
-    <div className="relative w-full max-w-3xl mx-auto aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-2xl border border-gray-800">
+    <div className="relative w-full aspect-video bg-gray-900 rounded-xl overflow-hidden shadow-2xl border border-gray-800">
       {/* Video Element (Hidden but active) */}
       <video
         ref={videoRef}
@@ -57,7 +57,7 @@ export const CameraView: React.FC<CameraViewProps> = ({ onPoseUpdate, count, sta
         <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-900/80 text-white z-10">
           <div className="w-12 h-12 border-4 border-red-500 border-t-transparent rounded-full animate-spin mb-4"></div>
           <p className="text-lg font-medium">
-            {!isCameraReady ? 'Starting camera...' : 'Loading AI model...'}
+            {!isCameraReady ? 'Starting camera...' : 'Now loading...'}
           </p>
         </div>
       )}
