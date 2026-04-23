@@ -24,7 +24,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ state, debugInfo, onReset,
   const StateIcon = config.icon;
 
   return (
-    <div className="w-full max-w-3xl mx-auto mt-4 space-y-4">
+    <div className="w-full mt-4 space-y-4">
       {/* Status & Controls */}
       <div className="bg-gray-900 rounded-2xl p-4 border border-gray-800 flex flex-col sm:flex-row items-center justify-between shadow-xl gap-4">
         
