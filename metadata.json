@@ -1,0 +1,5 @@
+{
+  "name": "Samurai DoJo",
+  "description": "Automatic bokken swing counter using pose estimation.",
+  "requestFramePermissions": ["camera"]
+}

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@keyframes hit-shake {
+  0% { transform: translate(0, 0) scale(1); }
+  20% { transform: translate(-15px, 15px) scale(1.05); }
+  40% { transform: translate(15px, -15px) scale(1.05); }
+  60% { transform: translate(-10px, -5px) scale(1.02); }
+  80% { transform: translate(10px, 5px) scale(1.01); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes hit-flash {
+  0% { opacity: 0; }
+  10% { opacity: 0.9; }
+  100% { opacity: 0; }
+}
+
+.animate-hit-shake {
+  animation: hit-shake 0.3s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.animate-hit-flash {
+  animation: hit-flash 0.3s ease-out both;
+}
